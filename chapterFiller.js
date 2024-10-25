@@ -31,3 +31,9 @@ builder = builder.substring(0, builder.length);
 builder += '</ul></h3>'
 
 document.getElementById('rel').innerHTML = builder;
+
+
+document.getElementById('user-body').textContent = document.getElementById('revision-input').value
+function onKeyUp() {
+  document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
+}

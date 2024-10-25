@@ -1,0 +1,13 @@
+#revision-input {
+  display: block;
+  width: 80%;
+  height: 15em;
+}
+
+#name-input {
+  display: block;
+}
+
+#submit-btn {
+  margin-top: .2em;
+}

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chem 101 Study Guide</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
     <div id="github-and-home"><a href="../index.html">Home</a> | <a href="https://github.com/jayhcrawford/chem101-sg">Github</a></div>
     <h1 id="chapter-num">Chapter 1</h1>
-    <hr>
     
     <hr>
     <b><p>Notes:</p>
@@ -19,6 +19,27 @@
     <div>
       Relavant Material: <p id="rel"></p>
     </div>
+    <hr>
+    <article id="user-body">
+
+    </article>
+    <hr>
+    <h4><b><u>Test and Submit Revisions:</u></b></h4>
+    <textarea onkeyup="onKeyUp()" id="revision-input">
+# Matter
+# Measurement
+    </textarea>
+    Your Name: (required) <input id="name-input"></input>
+    <button id="submit-btn">Submit</button>
+
 </body>
 </html>
 <script src="chapterFiller.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  document.getElementById('user-body').innerHTML = marked.parse(document.getElementById('revision-input').value)
+function onKeyUp() {
+  document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
+}
+</script>
+
