@@ -2,63 +2,25 @@ let builder = '';
 
 
 let outline =
-`
-Outline
-
-ch1.Matter
-ch1.Measurement
-
-ch2.The.Atom.And.Related
-ch2.Nomenclature
-ch2.Law.of.Conservation.of.Mass
-ch2.Law.of.Definite.Proportions
-
-ch3.The.mole
-ch3.Chemical.equations
-ch3.Percent.Composition
-ch3.Emperical.Formula
-ch3.Combustion.Analysis
-
-ch4.Percent.Yield
-ch4.Stoichiometry
-ch4.Chemical.Reactions
-ch4.Solutions.Molarity.Dilution.Titraion
-ch4.Volumetric.and.Gravimetric.Analysis
-
-ch5.Enthalpy
-ch5.Calorimetry
-ch5.Hesss.Law
-
-ch6.Quantum.Mechanics
-ch6.light
-ch6.Zeff
-ch6.Rydberg.Equations
-
-ch7.Electron.Configuration
-ch7.Periodicity
-
-ch8.Bonding
-ch8.Lattice.Energy
-ch8.Born.Haber.Cycle
-
-ch9.VSEPR.and.Lewis.Structures
-ch9.Valence.Bond.Theory
-
-ch10.Gases
-ch10.Ideal.Gas.Law
-ch10.Stoichiometry.Gas
-
-ch11.Intermolecular.forces
-ch11.Properties.of.Liquids
-
-ch12.Solids
-ch12.Unit.Cells
-`
+{
+chapter1: ["Matter", "Measurement"],
+chapter2: ["The Atom And Related", "Nomenclature", "Law of Conservation of Mass", "Law of Definite Proportions"],
+chapter3: ["The mole", "Chemical equations", "Percent Composition", "Emperical Formula", "Combustion Analysis"],
+chapter4: ["Percent Yield", "Stoichiometry", "Chemical Reactions", "chSolutions Molarity Dilution Titraion", "chVolumetric and Gravimetric Analysis"],
+chapter5: ["Enthalpy", "Calorimetry", "Hess's Law"],
+chapter6: ["Quantum Mechanics", "light", "Zeff", "Rydberg Equations"],
+chapter7: ["Electron Configuration", "Periodicity"],
+chapter8: ["Bonding", "Lattice Energy", "Born Haber Cycle"],
+chapter9: ["VSEPR and Lewis Structures", "Valence Bond Theory"],
+chapter10: ["Gases", "Ideal Gas Law", "Stoichiometry Gas"],
+chapter11: ["Intermolecular forces", "Properties of Liquids"],
+chapter12: ["Solids", "Unit Cells"]
+}
 
 //This for loop populates the homepage with links to Chapters
 const CHAPTERS = 12;
-for (let i = 0; i < CHAPTERS; i++) {
-    builder += `<a href="./ch.${i+1}"><p>Chapter ${i+1}</p></a>`
+for (let i = 1; i <= CHAPTERS; i++) {
+    builder += `<a href="./ch.${i+1}"><p>Chapter ${i}</a></p><p>${outline[`chapter` + i]}</p>`
 }
 
 

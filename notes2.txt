@@ -1,0 +1,9 @@
+
+
+const notesList = ["10-redox.gravimetric.volumetric.analysis ","17-bonding ","22-ideal.gas.laws ","2-matter ","7and8-chemical.reactions ",
+"12-enthalpy.hessLaw ","19-Lewis.and.VSEPR ", "22-real.gases ", "4-atoms.and.isotopes ","8-stoichimetry.limiting.reagent ",
+"13-enthalpy.calorimetry ", "1-into.and.sigfigs ", "24-intermolecularForces.and.Liquid ", "4-periodic.table ","9-molarity.and.solutions ",
+"14and15-quantum.mech ", "20-examples.Lewis.VSEPR ","24-intermolecularForces.and.Phase ","5-laws ",
+"14-light.and.classical.Phys ","20-mo.theory ", "25-solids ","5-nomenclature ",
+"15-electron.configuration ","20-valence.bond.theory ","26-adv.concentration ","6and7-empiricalFormula.combustionAnalysis ",
+"16-periodicity ", "21-empirical.gas.laws ", "2and3-measurements.density.precision ","6-mole.equations "]
