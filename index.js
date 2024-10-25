@@ -20,7 +20,7 @@ chapter12: ["Solids", "Unit Cells"]
 //This for loop populates the homepage with links to Chapters
 const CHAPTERS = 12;
 for (let i = 1; i <= CHAPTERS; i++) {
-    builder += `<a href="./ch.${i+1}"><p>Chapter ${i}</a></p><p>${outline[`chapter` + i]}</p>`
+    builder += `<a href="./chapter/${i}.html"><p>Chapter ${i}</a></p><p>${outline[`chapter` + i]}</p>`
 }
 
 
