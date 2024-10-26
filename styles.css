@@ -11,3 +11,9 @@
 #submit-btn {
   margin-top: .2em;
 }
+
+#warning-span {
+  background-color: red;
+  color: white;
+  margin: 1em;
+}

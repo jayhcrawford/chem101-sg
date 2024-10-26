@@ -11,26 +11,38 @@
     <h1 id="chapter-num">Chapter 1</h1>
     
     <hr>
-    <b><p>Notes:</p>
-    <p>Experiment(s):</p></b>
+    <b><p>Notes:</b><span id="note-span"></span></p></p>
+    <hr>
+    <b><p>Experiment(s):</b><span id="experiment-span"></span></p>
     <hr>
 
 
     <div>
-      Relavant Material: <p id="rel"></p>
+      <b>Relavant Topics:</b> <p id="rel"></p>
     </div>
     <hr>
     <article id="user-body">
 
     </article>
     <hr>
+
+
+
+  <form action="" id="MarkdownArea">
     <h4><b><u>Test and Submit Revisions:</u></b></h4>
     <textarea onkeyup="onKeyUp()" id="revision-input">
 # Matter
 # Measurement
     </textarea>
-    Your Name: (required) <input id="name-input"></input>
-    <button id="submit-btn">Submit</button>
+    Your Name: (required) <input type="text" id="name-input" ></input>
+    <button type="button" onclick="handleSubmit()" id="submit-btn">Submit</button><span id="warning-span"></span>
+
+  </form>
+
+
+
+    
+
 
 </body>
 </html>
