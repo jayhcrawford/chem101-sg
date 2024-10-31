@@ -8,7 +8,7 @@ chapter2: ["The Atom And Related", "Nomenclature", "Law of Conservation of Mass"
 chapter3: ["The mole", "Chemical equations", "Percent Composition", "Emperical Formula", "Combustion Analysis"],
 chapter4: ["Percent Yield", "Stoichiometry", "Chemical Reactions", "Solutions Molarity Dilution Titraion", "Volumetric and Gravimetric Analysis"],
 chapter5: ["Enthalpy", "Calorimetry", "Hess's Law"],
-chapter6: ["Quantum Mechanics", "light", "Zeff", "Rydberg Equations"],
+chapter6: ["Quantum Mechanics", "Light", "Zeff", "Rydberg Equations"],
 chapter7: ["Electron Configuration", "Periodicity"],
 chapter8: ["Bonding", "Lattice Energy", "Born Haber Cycle"],
 chapter9: ["VSEPR and Lewis Structures", "Valence Bond Theory"],
