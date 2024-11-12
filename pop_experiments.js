@@ -19,7 +19,9 @@ const experiments =
 
 let experimentsHTML = ''
 experiments.forEach((experiment) => {
-  experimentsHTML += `<p><a>${experiment}</a></p>`
+  let newString = experiment.split('.').join(' ');
+  let newURLDest = '/' + experiment.split('.').join('-') + '.html';
+  experimentsHTML += `<p><a href="${newURLDest}">${newString}</a></p>`
 })
 
 document.getElementById('experiments').innerHTML = experimentsHTML
