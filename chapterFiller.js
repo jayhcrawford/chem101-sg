@@ -16,11 +16,29 @@ function onKeyUp() {
 //This is used downstream to confirm user actually made changes before post
 let initialContent = '';
 initialContent += String(document.getElementById('user-body').innerHTML)
-console.log(initialContent)
 
-//access object keys using HTML
-let chapterNum = document.getElementById('chapter-num').innerHTML.toLowerCase()
-chapterNum = chapterNum.replace(/\s/g, '')
+
+
+let chapterNum;
+
+
+//TODO: relocate chapter-num functionality into its own script file
+if (document.getElementById('chapter-num') != null) {
+
+	
+
+	//access object keys using HTML
+	chapterNum = document.getElementById('chapter-num').innerHTML.toLowerCase()
+	chapterNum = chapterNum.replace(/\s/g, '')
+
+} else {
+	//(this condition exists on non-chapter pages, like experiment)
+
+	console.log("ALERT: \"chapter-num\" is undefined on this page; defaults to chapter1; TODO: relocate")	
+	chapterNum = 'chapter1';
+
+}
+
 
 
 let outline =
@@ -40,26 +58,42 @@ chapter12: {topics: ["Solids", "Unit Cells"], notes: ["day25-solids", "day26-adv
 }
 
 
-//populate relevant note PDF links
-let relevantNotes = '<ul>';
-outline[chapterNum].notes.forEach(note => {
-  relevantNotes += `<a href="./note.PDF/${note}.pdf"><li>${note}</li></a>`
-})
-relevantNotes += '</ul>'
-document.getElementById('note-span').innerHTML = relevantNotes
-document.getElementById('experiment-span').innerHTML = '(experiment features in dev)'
+
+//TODO: restructure; 'note-span' is the relevant notes section. give this its own script file.
+if (document.getElementById('note-span'))  
+{
+	//populate relevant note PDF links
+	let relevantNotes = '<ul>';
+	outline[chapterNum].notes.forEach(note => {
+	  relevantNotes += `<a href="./note.PDF/${note}.pdf"><li>${note}</li></a>`
+	})
+	relevantNotes += '</ul>'
+	document.getElementById('note-span').innerHTML = relevantNotes
+	document.getElementById('experiment-span').innerHTML = '(experiment features in dev)'
+} else {
+	console.log("Relevant Notes section undefined on this page; TODO: relocate")
+}
 
 
-//populate relevant topics
-let relevantTopics = '';
-relevantTopics += '<ul>'
-outline[chapterNum].topics.forEach(elem => {
-    relevantTopics += `<li>${elem}</li>`
-})
-relevantTopics = relevantTopics.substring(0, relevantTopics.length);
-relevantTopics += '</ul>'
-document.getElementById('rel').innerHTML = relevantTopics;
 
+
+
+
+//TODO: restructure; 'rel' is the relevant topics section. give this its own script file.
+if (document.getElementById('rel')) 
+{
+	//populate relevant topics
+	let relevantTopics = '';
+	relevantTopics += '<ul>'
+	outline[chapterNum].topics.forEach(elem => {
+	    relevantTopics += `<li>${elem}</li>`
+	})
+	relevantTopics = relevantTopics.substring(0, relevantTopics.length);
+	relevantTopics += '</ul>'
+	document.getElementById('rel').innerHTML = relevantTopics;
+} else {
+	console.log("Relevant Topics section undefined on this page; TODO: relocate")
+}
 
 function handleSubmit() {
   const newContent = document.getElementById('revision-input').value

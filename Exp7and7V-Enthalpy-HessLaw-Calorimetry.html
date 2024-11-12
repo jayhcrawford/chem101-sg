@@ -1,1 +1,81 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 7 and 7V</title>
+</head>
+<body>
+	<div id="github-and-home"><a href="../index.html">Home</a> | <a href="https://github.com/jayhcrawford/chem101-sg">Github</a></div>
+	<h1><span id="experiment-no"></span></h1>
+
+<a href="../experiments.html">Back to Experiments</a>
+
+    <hr>
+
+    <u><b>Please consider contributing!</b></u>
+
+
+    <hr>
+    <article id="user-body">
+
+
+
+
+    </article>
+    <hr>
+
+
+
+  <form action="" id="MarkdownArea">
+    <h4><b><u>Test and Submit Revisions:</u></b></h4>
+    <textarea onkeyup="onKeyUp()" id="revision-input">
+
+- Q = m*C(ΔT)
+
+# Q 
+- **(-q)** means the reaction is *Exothermic*; the system gives off energy.
+- **(+q)** means the reaction is *Endothermic*; energy is added to the system.
+
+# m 
+- Mass of substance/reaction/mixture in grams
+
+# C
+- C for constant; Constant meaning the specific heat capacity
+- specific heat capacity means the amount of energy (J) required to raise one gram of this substance by 1 °C
+- this measurement is specific to whatever substance is being examined
+- The unit for C is always J/g°C ; J (joules) / g (gram) °C (temp)
+
+# ΔT
+- Change in temperature in °C
+
+<hr>
+
+# ∆E
+- ∆E = E<sub>final</sub> – E<sub>initial</sub>
+- ∆E = **q** *(head added by or liberated from the system)* + **w** *(work done on the system)*
+
+
+
+    </textarea>
+    Your Name: (required) <input type="text" id="name-input" ></input>
+    <button type="button" onclick="handleSubmit()" id="submit-btn">Submit</button><span id="warning-span"></span>
+
+  </form>
+
+
+
+    
+
+
+</body>
+</html>
+<script src="experiment_filler.js"></script>
+<script src="chapterFiller.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  document.getElementById('user-body').innerHTML = marked.parse(document.getElementById('revision-input').value)
+function onKeyUp() {
+  document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
+}
+</script>

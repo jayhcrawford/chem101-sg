@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chem 101 Study Guide</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Experiment Template</title>
 </head>
 <body>
-    <div id="github-and-home"><a href="../index.html">Home</a> | <a href="https://github.com/jayhcrawford/chem101-sg">Github</a></div>
-    <h1 id="chapter-num">Chapter 5</h1>
-    
-    <hr>
-    <b><p>Notes:</b><span id="note-span"></span></p></p>
-    <hr>
-    <b><p>Experiment(s):</b><span id="experiment-span"></span></p>
+	<div id="github-and-home"><a href="../index.html">Home</a> | <a href="https://github.com/jayhcrawford/chem101-sg">Github</a></div>
+	<h1><span id="experiment-no"></span></h1>
+
+<a href="../experiments.html">Back to Experiments</a>
+
     <hr>
 
+    <u><b>Please consider contributing!</b></u>
 
-    <div>
-      <b>Relavant Topics:</b> <p id="rel"></p>
-    </div>
+
     <hr>
     <article id="user-body">
+
+
+
 
     </article>
     <hr>
@@ -31,13 +30,6 @@
   <form action="" id="MarkdownArea">
     <h4><b><u>Test and Submit Revisions:</u></b></h4>
     <textarea onkeyup="onKeyUp()" id="revision-input">
-# Enthalpy
-# Calorimetry
-# Hess's Law
-# Thermodynamics
-- <u>First Law</u>: Energy and matter can be neither created nor destroyed; only transformed from one form to another.  The energy and matter of the universe is constant.
-- <u>Second Law</u>: In any spontaneous process there is always an increase in the entropy of the universe.  The entropy is increasing.
-- <u>Third Law</u>: The entropy of a perfect crystal at 0 K is zero. There is no molecular motion at absolute 0 K.
     </textarea>
     Your Name: (required) <input type="text" id="name-input" ></input>
     <button type="button" onclick="handleSubmit()" id="submit-btn">Submit</button><span id="warning-span"></span>
@@ -51,6 +43,7 @@
 
 </body>
 </html>
+<script src="experiment_filler.js"></script>
 <script src="chapterFiller.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
@@ -59,4 +52,3 @@ function onKeyUp() {
   document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
 }
 </script>
-
