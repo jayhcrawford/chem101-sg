@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 16</title>
+</head>
+<body>
+	<div id="github-and-home"><a href="../index.html">Home</a> | <a href="https://github.com/jayhcrawford/chem101-sg">Github</a></div>
+	<h1><span id="experiment-no"></span></h1>
+
+<a href="../experiments.html">Back to Experiments</a>
+
+    <hr>
+
+    <u><b>Please consider contributing!</b></u>
+
+
+    <hr>
+    <article id="user-body">
+
+
+
+
+    </article>
+    <hr>
+
+
+
+  <form action="" id="MarkdownArea">
+    <h4><b><u>Test and Submit Revisions:</u></b></h4>
+    <textarea onkeyup="onKeyUp()" id="revision-input">
+#  Spectroscopic Methods Beers Law
+
+    </textarea>
+    Your Name: (required) <input type="text" id="name-input" ></input>
+    <button type="button" onclick="handleSubmit()" id="submit-btn">Submit</button><span id="warning-span"></span>
+
+  </form>
+
+
+
+    
+
+
+</body>
+</html>
+<script src="experiment_filler.js"></script>
+<script src="chapterFiller.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  document.getElementById('user-body').innerHTML = marked.parse(document.getElementById('revision-input').value)
+function onKeyUp() {
+  document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
+}
+</script>

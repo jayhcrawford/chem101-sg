@@ -31,7 +31,7 @@ const expMap = new Map([
     ["Exp10.Periodic.Properties", 0],
     ["Exp6.Ideal.Gas.Law", 0],
     ["Exp5.Graham.Law", 0],
-    ["Exp16.Spectroscopic.Methods.Beers.Law", 0],
+    ["Exp16.Spectroscopic.Methods.Beers.Law", 1],
     ["ExpExtra.Vapor.Pressure", 0],
     ["Exp18.Redox.Titration", 0]
   ])
