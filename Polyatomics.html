@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyatomic Ions</title>
+</head>
+<body>
+	<div id="github-and-home"><a href="../index.html">Home</a> | <a href="https://github.com/jayhcrawford/chem101-sg">Github</a></div>
+	<h1><span id="experiment-no"></span></h1>
+
+
+    <hr>
+
+    <u><b>Please consider contributing!</b></u>
+
+
+
+    <article id="user-body">
+
+
+
+
+    </article>
+    <hr>
+
+
+
+  <form action="" id="MarkdownArea">
+    <h4><b><u>Test and Submit Revisions:</u></b></h4>
+    <textarea onkeyup="onKeyUp()" id="revision-input">
+
+<sup></sup>
+<sub></sub>
+
+NH<sub>3</sub> Ammonia (Not an ion)
+
+NH<sub>4</sub><sup>+</sup> Ammonium Ion
+
+C<sub>2</sub>H<sub>3</sub>O<sub>2</sub><sup>-</sup> Acetate Ion
+
+O<sub>2</sub><sup>2-</sup> Peroxide Ion
+
+OH<sup>-</sup> Hydroxide Ion
+
+NO<sub>2</sub><sup>-</sup> Nitrite Ion
+
+NO<sub>3</sub><sup>-</sup> Nitrate Ion
+
+CN<sup>-</sup> Cyanide Ion
+
+OCN<sup>-</sup> Cyanite Ion (NCO<sup>-</sup>)
+
+SCN<sup>-</sup> Thiocyanite Ion
+
+HS<sup>-</sup> Hydrogen Sulfide Ion (bisulfide)
+
+SO<sub>3</sub><sup>2-</sup> Sulfite Ion
+
+HSO<sub>3</sub><sup>-</sup> Hydrogen Sulfite Ion (bisulfite)
+
+SO<sub>4</sub><sup>2-</sup> Sulfate Ion
+
+HSO<sub>4</sub><sup>-</sup> Hydrogen Sulfate Ion (bisulfate)
+
+S<sub>2</sub>O<sub>3</sub><sup>2-</sup> Thiosulfate Ion
+
+PO<sub>3</sub><sup>3-</sup> Phosphite Ion
+
+PO<sub>4</sub><sup>3-</sup> Phosphate Ion
+
+HPO<sub>4</sub><sup>2-</sup> Hydrogen Phosphate Ion
+
+H<sub>2</sub>PO<sub>4</sub><sup>-</sup> Dihydrogen Phosphate Ion
+
+CO<sub>3</sub><sup>2-</sup> Carbonate Ion
+
+HCO<sub>3</sub><sup>-</sup> Hydrogen Carbonate Ion (bicarbonate)
+
+CrO<sub>4</sub><sup>2-</sup> Chromate Ion 
+
+N<sup>3-</sup> Nitride Ion
+
+Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> Dichromate Ion
+
+C<sub>2</sub>O<sub>4</sub><sup>2-</sup> Oxalate Ion
+
+HC<sub>2</sub>O<sub>4</sub><sup>2-</sup> Hydrogen Oxalate Ion (bioxalate)
+
+ClO<sup>-</sup> Hypochlorite Ion
+
+ClO<sub>2</sub><sup>-</sup> Chlorite Ion
+
+ClO<sub>3</sub><sup>-</sup> Chlorate Ion
+
+ClO<sub>4</sub><sup>-</sup> Perchlorate Ion
+
+BrO<sup>-</sup> Hypobromite Ion
+
+BrO<sub>2</sub><sup>-</sup> Bromite Ion
+
+BrO<sub>3</sub><sup>-</sup> Bromate Ion
+
+BrO<sub>4</sub><sup>-</sup> Perbromate Ion
+
+IO<sup>-</sup> Hypoiodite Ion
+
+IO<sub>2</sub><sup>-</sup> Iodite Ion
+
+IO<sub>3</sub><sup>-</sup> Iodate Ion
+
+IO<sub>4</sub><sup>-</sup> Periodate Ion
+
+MnO<sub>4</sub><sup>-</sup> Permanganate Ion
+
+AsO<sub>4</sub><sup>3-</sup> Arsenate Ion
+
+AsO<sub>3</sub><sup>3-</sup> Arsenite Ion
+
+    </textarea>
+    Your Name: (required) <input type="text" id="name-input" ></input>
+    <button type="button" onclick="handleSubmit()" id="submit-btn">Submit</button><span id="warning-span"></span>
+
+  </form>
+
+
+
+    
+
+
+</body>
+</html>
+<script src="experiment_filler.js"></script>
+<script src="chapterFiller.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  document.getElementById('user-body').innerHTML = marked.parse(document.getElementById('revision-input').value)
+function onKeyUp() {
+  document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
+}
+</script>
