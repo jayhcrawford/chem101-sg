@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,21 +32,13 @@
     <h4><b><u>Test and Submit Revisions:</u></b></h4>
     <textarea onkeyup="onKeyUp()" id="revision-input">
 # Gases
-- 7.50062 mmHg = 1 kPa.
 - Be able to use kinetic molecular theory to identify which gas has the highest density.
-- 1 meter<SUP>3</SUP> = 1000 L
+- Convert meters^3 into Liters
 - Ideal Gas Law
 - Understand effusion vs difusion
 - What are "a" and "b" in the Van der Waals equations?
 - Be able to identify the regions of the earth's atmosphere.
 - Gas conversion chart
-
-# Effusion vs Diffusion
-
-- **Effusion** *(definition)* : the process where a gas escapes from a container through a very small opening, like a pinhole, into a vacuum.
-
-- **Diffusion** *(definition)* : driven by a gradient, the net movement of anything generally from a region of higher concentration to a region of lower concentration.
-
 
 # Manometers and Barometers
 - Calculating pressure of a gas using a manometer
@@ -52,6 +46,23 @@
 
 
 # Stoichiometry Gas
+
+# Gas Laws 101
+
+# van der Waals equation
+
+<img style="width: 15em;" src="https://jayhcrawford-webimages.s3.us-east-2.amazonaws.com/chem101-host/van_der_waals_equation.svg"></img>
+
+- **P** = pressure (atm)
+- **R** = universal gas constant (8.314 J / mol·K **OR** 0.0821 L·atm / mol·K)
+- **T** = absolute temperature (K) 
+- **V** = molar volume (moles)
+ > To calculate molar volume, divide molar mass of the gas by the weight (g) per Liter of gas.
+- **b** = gas constant b
+- **a** = gas constant a
+
+
+
     </textarea>
     Your Name: (required) <input type="text" id="name-input" ></input>
     <button type="button" onclick="handleSubmit()" id="submit-btn">Submit</button><span id="warning-span"></span>
@@ -73,3 +84,4 @@ function onKeyUp() {
   document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
 }
 </script>
+C:\Users\jayha\OneDrive\Desktop\chem101-sg

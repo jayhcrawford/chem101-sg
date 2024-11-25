@@ -29,7 +29,7 @@ const expMap = new Map([
     ["Exp12.Titration.Volumetric.Analysis", 0],
     ["Exp11.Molecular.Models", 0],
     ["Exp10.Periodic.Properties", 0],
-    ["Exp6.Ideal.Gas.Law", 0],
+    ["Exp6.Ideal.Gas.Law", 1],
     ["Exp5.Graham.Law", 0],
     ["Exp16.Spectroscopic.Methods.Beers.Law", 1],
     ["ExpExtra.Vapor.Pressure", 0],

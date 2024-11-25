@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Gas Law</title>
+</head>
+<body>
+	<div id="github-and-home"><a href="../index.html">Home</a> | <a href="https://github.com/jayhcrawford/chem101-sg">Github</a></div>
+	<h1><span id="experiment-no"></span></h1>
+
+<a href="../experiments.html">Back to Experiments</a>
+
+    <hr>
+
+    <u><b>Please consider contributing!</b></u>
+
+
+    <hr>
+    <article id="user-body">
+
+
+
+
+    </article>
+    <hr>
+
+
+
+  <form action="" id="MarkdownArea">
+    <h4><b><u>Test and Submit Revisions:</u></b></h4>
+    <textarea onkeyup="onKeyUp()" id="revision-input">
+
+Calculating the moles of hydrogen gas produced from an alloy is straightforward.
+You need to have the balanced chemical equations for the reaction of the individual metals with the acid.
+
+### Balanced Chemical Equations:
+
+Zn(s) + 2 HCl(aq) → ZnCl<sub>2</sub>(aq) + H<sub>2</sub>(g)
+
+2 Al(s) + 6 HCl(aq) → 2 AlCl<sub>3</sub>(aq) + H<sub>2</sub>(g)
+
+### Calculate moles of H<sub>2</sub> with the known composition using this formula:
+
+<img src="https://jayhcrawford-webimages.s3.us-east-2.amazonaws.com/chem101-host/calc-gas-from-alloy.svg"/>
+
+    </textarea>
+    Your Name: (required) <input type="text" id="name-input" ></input>
+    <button type="button" onclick="handleSubmit()" id="submit-btn">Submit</button><span id="warning-span"></span>
+
+  </form>
+
+
+
+    
+
+
+</body>
+</html>
+<script src="experiment_filler.js"></script>
+<script src="chapterFiller.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  document.getElementById('user-body').innerHTML = marked.parse(document.getElementById('revision-input').value)
+function onKeyUp() {
+  document.getElementById('user-body').innerHTML=marked.parse(document.getElementById('revision-input').value)
+}
+</script>
