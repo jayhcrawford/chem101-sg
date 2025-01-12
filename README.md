@@ -4,7 +4,7 @@ This is designed to aid in studying Professor Boan's Chem 101 at LACC
 
 Not all of the pages saw development.
 
-[Chapter 8 is a good page to visit](https://chem101-o6hjxhjti-jayhcrawfords-projects.vercel.app/8.html)
+[Chapter 8 is a good page to visit](https://chem101-o6hjxhjti-jayhcrawfords-projects.vercel.app/8.html) (It may looks scattered--but trust me. It's far more concentrated and coherent than this course's slides)
 
 This professor is extremely enthusiastic about certain elements of Chemistry instruction. 
 Organizing slides in a coherent manner, and explicitly communicating the specifics of the expectation for the ACS exam were not her passions.
