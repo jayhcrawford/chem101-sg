@@ -12,7 +12,7 @@ Another issue was that all of the slides were Powerpoints, and had absolutely no
 I designed this simple web app to be based on Git, an AWS S3 Bucket, and a REST API which communicates with MongoDB. The AWS S3 Bucket hosts images. Git helps to track any changes. The REST API permitted my colleagues to make submissions for potential revision by databasing their suggestions in MongoDB.  I did not permit my colleagues to make edits without those edits first being reviewed, for obvious reasons.
 
 
-My aim was to smack this together fast, and make it usable, and fast. I wanted to eliminate confusion and using Canvas.
+My aim was to smack this together quickly, and make it usable, and peppy. Canvas is so slow. I wanted to eliminate the obstacles of confusion and Canvas.
 This web app renders material using MarkdownJS and the free [Equation Editor API] (https://editor.codecogs.com/). Implementing LaTeX was way too involved for this simple, open source study guide, the Equation Editor API did it better.
 
 The class is structured so that the final is the ACS Exam. 
