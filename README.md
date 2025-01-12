@@ -2,6 +2,10 @@ This is designed to aid in studying Professor Boan's Chem 101 at LACC
 
 [It's deployed on Vercel](https://chem101-sg.vercel.app/)
 
+Not all of the pages saw development.
+
+[Chapter 8 is a good page to visit](https://chem101-o6hjxhjti-jayhcrawfords-projects.vercel.app/8.html)
+
 This professor is extremely enthusiastic about certain elements of Chemistry instruction. 
 Organizing slides in a coherent manner, and explicitly communicating the specifics of the expectation for the ACS exam were not her passions.
 Having a functional Canvas shell was also not her passion. On multiple occasions, questions were missing critical data, like charts. On other occasions, the answer key was incorrect.
