@@ -1,6 +1,6 @@
 This is designed to aid in studying Professor Boan's Chem 101 at LACC
 
-[It's deployed on Vercel](https://chem101-sg.vercel.app/))
+[It's deployed on Vercel](https://chem101-sg.vercel.app/)
 
 This professor is extremely enthusiastic about certain elements of Chemistry instruction. 
 Organizing slides in a coherent manner, and explicitly communicating the specifics of the expectation for the ACS exam were not her passions.
