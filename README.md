@@ -21,7 +21,7 @@ I designed this simple web app to be based on Git, an AWS S3 Bucket, and a REST 
 
 
 My aim was to smack this together quickly, and make it usable, and peppy. Canvas is so slow. I wanted to eliminate the obstacles of confusion and Canvas.
-This web app renders material using MarkdownJS and the free [Equation Editor API] (https://editor.codecogs.com/). Implementing LaTeX was way too involved for this simple, open source study guide, the Equation Editor API did it better.
+This web app renders material using MarkdownJS and the free [Equation Editor API](https://editor.codecogs.com/). Implementing LaTeX was way too involved for this simple, open source study guide, the Equation Editor API did it better.
 
 The class is structured so that the final is the ACS Exam. 
 I got an A in this class and scored 75% on the ACS Exam. The national average is 50%. I did not study very hard, but I did try to translate my studies into this web app, which I believe helped me a lot on the ACS Exam. 
